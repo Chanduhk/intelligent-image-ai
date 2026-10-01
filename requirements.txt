@@ -1,4 +1,4 @@
-﻿# Intelligent Image Compression & Analysis System
+# Intelligent Image Compression & Analysis System
 # Pinned for reproducible Streamlit Community Cloud deployment
 # Generated from local environment (Python 3.x, CPU-only)
 
