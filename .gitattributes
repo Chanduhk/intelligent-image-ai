@@ -1,0 +1,6 @@
+﻿# Git LFS tracking for large binary model artifacts
+# These files are required for inference but too large for standard Git blobs.
+# Tracked with Git LFS so Streamlit Community Cloud can pull them via LFS.
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text

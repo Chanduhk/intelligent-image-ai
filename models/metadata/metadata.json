@@ -1,0 +1,42 @@
+{
+  "current_version": 3,
+  "versions": [
+    {
+      "version": 1,
+      "tag": "v1",
+      "timestamp": "2026-09-29T23:03:49.106552",
+      "metrics": {
+        "val_mse": 9999.0,
+        "classifier_acc": 0.0,
+        "recovered": true
+      },
+      "description": "Auto-recovered from disk (training was interrupted after model save)",
+      "deployed": false
+    },
+    {
+      "version": 2,
+      "tag": "v2",
+      "timestamp": "2026-09-29T23:52:44.861543",
+      "metrics": {
+        "val_mse": 0.008246015238761902,
+        "classifier_acc": 45.75,
+        "epochs": 1
+      },
+      "description": "Quick 1-epoch validation/test run",
+      "deployed": false
+    },
+    {
+      "version": 3,
+      "tag": "v3",
+      "timestamp": "2026-09-30T14:25:42.965630",
+      "metrics": {
+        "val_mse": 0.004354247846454382,
+        "classifier_acc": 48.32,
+        "epochs": 30
+      },
+      "description": "Full 30-epoch training on CIFAR-10",
+      "deployed": true
+    }
+  ],
+  "deployed_version": 3
+}

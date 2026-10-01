@@ -1,0 +1,58 @@
+﻿# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Training data (never commit raw CIFAR-10) ─────────────────────────────────
+data/raw/
+data/learning_buffer/
+data/processed/
+
+# ── Old / large model artifacts to exclude ────────────────────────────────────
+# v1 and v2 are superseded by v3; checkpoints are training-only artifacts
+models/autoencoder/autoencoder_v1.pth
+models/autoencoder/autoencoder_v2.pth
+models/anomaly/anomaly_v2.pkl
+models/autoencoder/checkpoints/
+# classifier_v2.pkl is 1 GB -- MUST be excluded
+models/classifier/classifier_v2.pkl
+
+# ── Logs and outputs ──────────────────────────────────────────────────────────
+logs/
+outputs/
+
+# ── Streamlit secrets (never commit) ─────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── OS and IDE artifacts ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── pytest / coverage ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
