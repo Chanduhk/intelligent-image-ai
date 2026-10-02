@@ -56,3 +56,7 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Generated dataset - keep local, do not commit
+data/dataset/
+data/raw_dataset/
